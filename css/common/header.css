@@ -1,0 +1,56 @@
+/* header */
+
+:root {
+    --basicSize: 20px;
+}
+
+html {
+    font-size: 20px;
+    /* font-size: var(--basicSize); */
+}
+#wrap {
+    width: 100%;
+    height: 100vh;
+    /* font-size: 1rem; */
+    padding: 0.5em;
+    /* border: 0.05em solid; */
+    box-sizing: border-box;
+}
+.header {
+    background-color: #ccc;
+    padding: 0.75em;
+}
+.header .inner-header {
+    display: flex;
+    justify-content: center;
+}
+.header .inner-header .nav {
+    flex: 0 1 50em;
+    /* border: 0.05em solid; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.header .inner-header .nav h1.logo {
+    font-size: 1.5rem;
+    flex: 0 0 4em;
+    line-height: 1em;
+    /* border: 0.03em solid; */
+    box-sizing: border-box;
+}
+.header .inner-header .nav .gnb {
+    flex: 0 1 25em;
+    /* border: 0.05em solid; */
+    box-sizing: border-box;
+    padding: 0 0.5em;
+}
+.header .inner-header .nav .gnb>ul {
+    display: flex;
+    justify-content: space-around;
+}
+.header .inner-header .nav .gnb>ul>li {
+    font-size: 0.6rem;
+    /* border: 0.0833em solid; */
+    box-sizing: border-box;
+    line-height: 2.5em;
+}
