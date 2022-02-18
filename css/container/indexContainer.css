@@ -9,6 +9,8 @@
 .container .inner-container .index {
     flex: 0 1 1600px;
     background-color: #ccf;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .container .inner-container .index .grid-container {
@@ -148,6 +150,10 @@
 }
 
 @media only screen and (max-width:959px) {
+    .container .inner-container .index .grid-container {        
+        grid-template-rows: minmax(550px, auto) repeat(2, minmax(50px, auto));
+    }
+
     .container .inner-container .index .grid-container .grid-con>ul {
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(2, minmax(400px, auto));
@@ -189,6 +195,9 @@
 }
 
 @media only screen and (max-width:767px) {
+    .container .inner-container .index .grid-container {        
+        grid-template-rows: minmax(500px, auto) repeat(2, minmax(50px, auto));
+    }
     .container .inner-container .index .grid-container .grid-con>ul {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, minmax(400px, auto));
