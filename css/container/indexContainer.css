@@ -78,6 +78,7 @@
 
     grid-auto-rows: minmax(370px, auto);
     gap: 5px;
+    box-sizing: border-box;
 }
 
 .container .inner-container .index .grid-container .grid-con>ul>li img {
